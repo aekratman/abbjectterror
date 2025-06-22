@@ -1,0 +1,184 @@
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:5%; /* you can use % */
+    height: auto;
+}
+
+
+.resizehalf2 {
+    width: 30%; 
+    height: auto;
+    position: sticky;
+    top: 30px;
+    left: 40px;
+    border: solid white;
+
+}
+
+
+.resize20 {
+    width: 20%; /* you can use % */
+    height: auto;
+}
+
+
+.resizehalf {
+    width: 30%; /* you can use % */
+    height: auto;
+}
+
+
+.resize50 {
+    width: 50%; /* you can use % */
+    height: auto;
+
+}
+
+.resize70 {
+    width: 70%; /* you can use % */
+    height: auto;
+}
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+.resizebig {
+    width: 110%; /* you can use % */
+    height: auto;  
+    margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Centering */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.right {
+  display: block;
+  margin-left: auto;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+.flexrowcenter{
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+/* Boxes */
+
+.sidebar {
+  width: 350px;
+  height: auto;
+  
+  background: black;
+  border: 5px solid green;
+}
+
+
+.centerbar {
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(/fontin/basiic-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(/fontin/rowdy.otf);
+}
+
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+
+.basiic {
+font-family: 'basiic';
+}
+
+

@@ -1,0 +1,721 @@
+h1 {text-align: center; font-family: brizel}
+p {text-align: center;}
+div {text-align: center;}
+em {text-align: center; font-family: brizel}
+h3 {text-align: center; font-family: '2dumb'}
+
+
+
+.container2 {
+  position: relative;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;si
+  background-color: #2a316f;
+}
+
+.container2:hover .overlay2 {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* some new grid possibilities?? */
+
+
+.floatup:hover {
+	  transition-duration: 0.5s;
+	  translate: 0px -5px;
+	  filter: drop-shadow(0px 5px 10px #0a051c);
+	}
+	
+	
+	.gridcontainer {
+		display: grid;
+		background-color: black;
+		grid-template-columns: auto auto auto;
+	}
+
+
+/* Backgrounds */
+
+
+.bodybackground {
+  background-image: url(/images/spacecase.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.dndbg {
+  background-image: url(/images/badkids/dndbg.jpg);
+  background-attachment: fixed;
+  
+}
+
+.comfbg {
+  background-image: url(/images/comfbg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+
+.piratebg {
+  background-image: url(/images/bravery_cave.jpg);
+  background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+
+.piercecharabg
+{
+  background-image: url(/images/backdrop2.jpg);
+  background-repeat: no-repeat;
+  background-color: blue;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.niteotwbg
+{
+  background-image: url(/images/niteotwpics/niteotwbg.jpg);
+  background-repeat: no-repeat;
+  background-color: blue;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.rtcbg
+{
+  background-image: url(/images/rtcbg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.aibg
+{
+  background-image: url(/images/aibg.jpg);
+  background-attachment: fixed;
+  background-size: 50% 100%;
+
+}
+
+.duckbg
+{
+  background-image: url(/images/duckbg.jpg);
+  background-attachment: fixed;
+  background-size: 50% 100%;
+}
+
+
+.spgbackground {
+  background-image: url(/images/spgbg22.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.horrorbg {
+  background-image: url(/images/horrorbg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.cozybg {
+  background-image: url(images/fortbg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.piercebg {
+  background-image: url(/images/piercebg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.mechbg {
+  background-image: url(/images/spgpics/mechbg.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+.mabelbg {
+  background-image: url(/images/mabelbg.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+
+/* basic formatting */
+.img{
+  display: flex;
+
+gap: 5000px;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Animation */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.upDown {
+  animation: moveUpDown 2s infinite;
+  animation-delay: 1s;
+}
+
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:10%; /* you can use % */
+    height: auto;
+}
+
+
+.resizehalf2 {
+    width: 30%; 
+    height: auto;
+    position: sticky;
+    top: 30px;
+    left: 40px;
+    border: solid white;
+
+}
+
+.resizehalf3 {
+    width: 50%; 
+    height: auto;
+    position: sticky;
+    top: 30px;
+    left: 40px;
+    
+
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  padding: 0.25em 0.5em;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25em;
+  white-space: nowrap;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 100%;
+  transition-property: visibility;
+  transition-delay: 0s;
+  
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+
+.textbox{
+   width: auto; /* you can use % */
+    height: auto;
+}
+  
+.resizebaby {
+  width: 10%; /* you can use % */
+  height: auto;
+}
+
+.resize15 {
+    width: 15%; /* you can use % */
+    height: auto;
+}
+
+.resize20 {
+    width: 20%; /* you can use % */
+    height: auto;
+}
+
+
+.resizehalf {
+    width: 30%; /* you can use % */
+    height: auto;
+}
+
+
+.resize50 {
+    width: 50%; /* you can use % */
+    height: auto;
+
+}
+
+.resize70 {
+    width: 70%; /* you can use % */
+    height: auto;
+}
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+
+.resizebig {
+    width: 110%; /* you can use % */
+    height: auto;  
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.resizenorm {
+    width: 100%; /* you can use % */
+    height: 100%;
+}
+
+
+.resizedouble2 {
+    width: 70%; /* you can use % */
+    height: auto;
+}
+
+.iconsize {
+    width: 150px; /* you can use % */
+    height: auto;
+}
+
+
+/* Centering */
+
+.textcenterer {
+  width: 75px;
+  background-color: red
+}
+
+
+.centernoresize {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rightpage {
+    display: block;
+    overflow: hidden;
+}
+  
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%; /* you can use % */
+  height: auto; /* you can use % */
+
+
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* you can use % */
+  height: auto; /* you can use % */
+
+
+}
+
+
+.right {
+  display: block;
+  margin-left: auto;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+.flexrowcenter{
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+/* Dropdowns */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Boxes */
+
+.sidebar {
+    margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 700px;
+  margin: 10px;
+
+  background: black;
+  border: 5px solid green;
+}
+
+
+.centerbarbio {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+    height: auto;
+  border: 5px solid #00C1FF;
+}
+
+
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(fontin/basiic-webfont.woff);
+}
+
+@font-face {
+  font-family: 'lexo';
+  src: url(fontin/lexo-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'blotter';
+  src: url(fontin/blotter/blotter-regular_1-webfont.woff);
+}
+
+@font-face {
+  font-family: 'actionj';
+  src: url(fontin/actionj-webfont.woff);
+}
+@font-face {
+  font-family: 'constant';
+  src: url(fontin/constant-webfont.woff);
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url(fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'prefix';
+  src: url(fontin/prefix-webfont.woff);
+}
+
+
+@font-face {
+  font-family: '2dumb';
+  src: url(fontin/2Dumb.ttf);
+}
+
+@font-face {
+  font-family: '1942';
+  src: url(fontin/1942.ttf);
+}
+
+@font-face {
+  font-family: '3dumb';
+  src: url(fontin/3Dumb.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(fontin/rowdy.otf);
+}
+
+@font-face {
+  font-family: 'abyss';
+  src: url(fontin/abyss.otf);
+}
+
+
+
+@font-face {
+  font-family: 'bagnard';
+  src: url(fontin/Bagnard.otf);
+}
+
+
+@font-face {
+  font-family: 'barber';
+  src: url(fontin/barber.woff);
+}
+
+.barber {
+font-family: 'barber';
+}
+
+.bagnard {
+font-family: 'bagnard';
+}
+
+
+.abyss {
+font-family: 'abyss';
+}
+
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+
+
+.brizel {
+font-family: 'brizel';
+}
+
+
+.dumb3 {
+font-family: '3dumb';
+}
+
+.dumb2 {
+font-family: '2dumb';
+}
+
+
+.font1942 {
+font-family: '1942';
+}
+
+.prefix {
+font-family: 'prefix';
+}
+.amatic {
+font-family: 'amatic';
+}
+
+
+.constant {
+font-family: 'constant';
+}
+
+.actionj {
+font-family: 'actionj';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+.lexo {
+font-family: 'lexo';
+}
+
+.blotter {
+font-family: 'blotter';
+}
+
+.rec { display: none; }
+
+button {
+  background-color: #2b3690;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-family: basiic;
+}
+
+button:hover, button.active { background-color: #848fe6; }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  } 
+}
+

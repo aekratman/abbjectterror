@@ -1,0 +1,1053 @@
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+
+
+.container2 {
+  position: relative;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2a316f;
+}
+
+.container2:hover .overlay2 {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* some new grid possibilities?? */
+
+
+.floatup:hover {
+	  transition-duration: 0.5s;
+	  translate: 0px -5px;
+	  filter: drop-shadow(0px 5px 10px #0a051c);
+	}
+	
+	
+	.gridcontainer {
+		display: grid;
+		background-color: black;
+		grid-template-columns: auto auto auto;
+	}
+	
+	
+/* Backgrounds */
+
+
+.bodybackground, .blackbg, .comfbg, .piratebg, .piercecharabg, .niteotwbg, .rtcbg, .spgbackground,
+.horrorbg, .cozybg, .piercebg, .mechbg, .mabelbg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+.bluebg {
+  background: linear-gradient(to bottom, #ADD8E6, #03ecf0);
+  height: 100vh;
+  margin: 0;
+        }
+        
+.bodybackground {
+  background-image: url(/images/spacecase.gif);
+}
+
+.blackbg {
+  background-color: grey;
+}
+
+.comfbg {
+  background-image: url(/images/comfbg.jpg);
+}
+
+.piratebg {
+  background-image: url(/images/bravery_cave.jpg);
+}
+
+.piercecharabg {
+  background-image: url(/images/backdrop2.jpg);
+}
+
+.niteotwbg {
+  background-image: url(/images/niteotwpics/niteotwbg.jpg);
+}
+
+.rtcbg {
+  background-image: url(/images/rtcbg.jpg);
+}
+
+.spgbackground {
+  background-image: url(/images/spgbg22.jpeg);
+}
+
+.horrorbg {
+  background-image: url(/images/horrorbg.jpg);
+}
+
+.cozybg {
+  background-image: url(images/fortbg.jpg);
+
+}
+
+.piercebg {
+  background-image: url(/images/piercebg.jpg);
+}
+
+.mechbg {
+  background-image: url(/images/spgpics/mechbg.jpeg);
+}
+
+
+.mabelbg {
+  background-image: url(/images/mabelbg.jpeg);
+}
+
+
+
+.aibg, .duckbg
+{
+  background-attachment: fixed;
+  background-size: 50% 100%;
+}
+
+.aibg
+{
+  background-image: url(/images/aibg.jpg);
+}
+
+.duckbg
+{
+  background-image: url(/images/duckbg.jpg);
+}
+
+
+
+/* basic formatting */
+.img{
+  display: flex;
+
+gap: 5000px;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Animation */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.upDown {
+  animation: moveUpDown 2s infinite;
+  animation-delay: 1s;
+}
+
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:10%; /* you can use % */
+    height: auto;
+}
+
+
+.resizehalf2 {
+    width: 30%; 
+    height: auto;
+    position: sticky;
+    top: 30px;
+    left: 40px;
+    border: solid white;
+
+}
+
+.resizehalf3 {
+    width: 50%; 
+    height: auto;
+    position: sticky;
+    top: 30px;
+    left: 40px;
+    
+
+}
+
+.textbox{
+   width: auto; /* you can use % */
+    height: auto;
+}
+  
+
+
+.resize20 {
+    width: 20%; /* you can use % */
+    height: auto;
+}
+
+
+.resizehalf {
+    width: 30%; /* you can use % */
+    height: auto;
+}
+
+
+.resize50 {
+    width: 50%; /* you can use % */
+    height: auto;
+
+}
+
+.resize70 {
+    width: 70%; /* you can use % */
+    height: auto;
+}
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+.resizebig {
+    width: 110%; /* you can use % */
+    height: auto;  
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.resizenorm {
+    width: 100%; /* you can use % */
+    height: 100%;
+}
+
+
+.resizedouble2 {
+    width: 70%; /* you can use % */
+    height: auto;
+}
+
+.iconsize {
+    width: 150px; /* you can use % */
+    height: auto;
+}
+
+
+/* Centering */
+
+.textcenterer {
+  width: 75px;
+  background-color: red
+}
+
+
+.centernoresize {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rightpage {
+    display: block;
+    overflow: hidden;
+}
+  
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%; 
+  height: auto;
+
+
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+  height: auto; 
+
+
+}
+
+
+.right {
+  display: block;
+  margin-left: auto;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+/* Dropdowns */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Boxes */
+
+.sidebar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 700px;
+  margin: 10px;
+  background: black;
+  border: 5px solid green;
+}
+
+.sidebarphoto {
+  width: 300px;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  background: black;
+  border: 5px solid white;
+}
+
+.sidebarright {
+  width: auto;
+  height: 150px;
+ margin-left: 20px;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 25px;
+  background: black;
+  border: 5px solid white;
+}
+
+.sidebarright2 {
+  width: 700px;
+  margin-left: auto;
+  margin-top: 100px;
+  padding: 25px;
+  background: black;
+  border: 5px solid white;
+}
+
+
+.sidebarcomf {
+  width: 500px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  padding: 25px;
+  background: #85DCBA;
+  border: 5px solid white;
+}
+
+
+.centerbar, .centerbarbio, .centercomf {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+}
+
+.centerbar {
+  height: 750px;
+  border: 5px solid green;
+}
+
+.centercomf {
+  width: 700px;
+  height: auto;
+  border: 5px solid #FFFDD0;
+  background: lightgrey;
+}
+
+.centerbarbio {
+  height: auto;
+  border: 5px solid #00C1FF;
+}
+
+
+
+
+
+
+.resizebadkids {
+    width: 100px; 
+    height: auto;
+    
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badkidsbio {
+  width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+
+
+.niteotwcenter {
+  width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.niteotwside {
+  width: 300px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+
+.cozybarbio {
+  width: 450px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: #a8abc3;
+  border: 5px solid blue;
+}
+
+.centerbarsmaller {
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.samplebox {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: grey;
+    border: 5px solid #00C1FF;
+
+}
+
+.centerbarnormal {
+  width: 1000px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.centerbarnormal2 {
+  width: 800px;
+  height: auto;
+  margin-left: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.leftbar {
+  width: 500px;
+  height: 750px;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.rightbar {
+  width: 500px;
+  height: 750px;
+  margin-left: auto;
+    margin-top: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.leftbarsmaller {
+  width: 400px;
+  height: auto;
+  margin-right: auto;
+    margin-bottom: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+.leftbarauto {
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+    margin-bottom: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+
+.bodybox {
+  width: 400px;
+  height: 230px;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+.bodyboxauto {
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+.bodyboxauto2 {
+  width: 400px;
+  height: auto;
+ margin: auto;
+ padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+.bodyboxauto3 {
+   margin: 0 auto; 
+  max-width: 600px; 
+  width: 400px;
+  height: auto;
+  align-items: center;
+  background: #212121;
+  border: 5px solid green;
+  margin-bottom: 10px;
+}
+
+.credbox {
+  width: 200px;
+  height: 20;
+  margin-left: 200px;
+  background: black;
+  border: 5px solid green;
+}
+
+.autobox {
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+.autoboxblue {
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid lightblue;
+}
+
+.autoboxwidth {
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+.bodyboxlong {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+.boxbox {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  position: relative;
+  bottom: 10px;
+  
+}        
+  
+  .boxboxtext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+  }
+
+.centerbox {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 200px;
+  padding: 25px;
+  border: 5px solid green;
+}
+
+.rightbox {
+  margin-left: 900px;
+    margin-top: -900px;
+  padding: 25px;
+}
+
+.buttonbox {
+  margin-left: 900px;
+    margin-top: -400px;
+  background: black;
+
+  border: 5px solid green;
+  padding: 25px;
+}
+
+.lefttbox {
+  margin-right: 900px;
+    margin-top: -600px;
+
+  padding: 25px;
+}
+
+.bodyboxblue {
+  width: 400px;
+  height: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(fontin/basiic-webfont.woff);
+}
+
+@font-face {
+  font-family: 'roth';
+  src: url(fontin/RothmanPlain.ttf);
+}
+
+@font-face {
+  font-family: 'lexo';
+  src: url(fontin/lexo-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'blotter';
+  src: url(fontin/blotter/blotter-regular_1-webfont.woff);
+}
+
+@font-face {
+  font-family: 'actionj';
+  src: url(/fontin/actionj-webfont.woff);
+}
+@font-face {
+  font-family: 'constant';
+  src: url(/fontin/constant-webfont.woff);
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url(/fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'prefix';
+  src: url(/fontin/prefix-webfont.woff);
+}
+
+
+@font-face {
+  font-family: '2dumb';
+  src: url(fontin/2Dumb.ttf);
+}
+
+@font-face {
+  font-family: '1942';
+  src: url(fontin/1942.ttf);
+}
+
+@font-face {
+  font-family: '3dumb';
+  src: url(fontin/3Dumb.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(fontin/rowdy.otf);
+}
+
+@font-face {
+  font-family: 'abyss';
+  src: url(fontin/abyss.otf);
+}
+
+
+
+@font-face {
+  font-family: 'bagnard';
+  src: url(fontin/Bagnard.otf);
+}
+
+
+@font-face {
+  font-family: 'barber';
+  src: url(fontin/barber.woff);
+}
+
+.barber {
+font-family: 'barber';
+}
+
+.bagnard {
+font-family: 'bagnard';
+}
+
+
+.abyss {
+font-family: 'abyss';
+}
+
+.roth {
+  font-family: 'roth';
+}
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+
+
+.brizel {
+font-family: 'brizel';
+}
+
+
+.dumb3 {
+font-family: '3dumb';
+}
+
+.dumb2 {
+font-family: '2dumb';
+}
+
+
+.font1942 {
+font-family: '1942';
+}
+
+.prefix {
+font-family: 'prefix';
+}
+.amatic {
+font-family: 'amatic';
+}
+
+
+.constant {
+font-family: 'constant';
+}
+
+.actionj {
+font-family: 'actionj';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+.lexo {
+font-family: 'lexo';
+}
+
+.blotter {
+font-family: 'blotter';
+}
+
+.rec { display: none; }
+
+button {
+  background-color: #2b3690;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-family: basiic;
+}
+
+button:hover, button.active { background-color: #848fe6; }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.headerboy {
+  padding: 30px;
+  background-image: url(/images/neighborhood.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% -20%;
+text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -px black;
+  font-size: 40px;
+  color: darkblue;
+  text-align: center;
+}
+
+
+
+.alignbottom {
+vertical-align: bottom;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footerboy {
+  padding: 20px;
+  text-align: center;
+  background: #060606;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  } 
+}
+

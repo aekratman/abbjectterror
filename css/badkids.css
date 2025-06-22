@@ -1,0 +1,351 @@
+/*Text alignments  */
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+li {text-align: center; color: yellow}
+
+/* Animation */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.upDown {
+  margin-left: auto;
+  margin-right: auto;
+  animation: moveUpDown 2s infinite;
+  animation-delay: 1s;
+}
+
+
+/* Background  */
+.dndbg {
+  background-image: url(/images/badkids/dndbg.jpg);
+  background-attachment: fixed;
+  
+}
+
+
+
+/* basic formatting */
+.img{
+  display: flex;
+
+gap: 5000px;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:10%; /* you can use % */
+    height: auto;
+}
+
+
+
+.resizehalf {
+    width: 30%; /* you can use % */
+    height: auto;
+}
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+
+.resizebig {
+    width: 110%; /* you can use % */
+    height: auto;  
+    margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Centering */  
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+.flexrowcenter{
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Boxes */
+
+.sidebar {
+  width: 350px;
+  height: 700px;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid green;
+}
+
+
+.resizebadkids {
+    width: 100px; 
+    height: auto;
+    
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badkidsbio {
+  width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+
+
+
+
+/* Important text */
+
+
+a:h1{
+color: #ff1d1d;
+}
+
+a:p{
+color: white;
+}
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lemonchiffon;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(fontin/basiic-webfont.woff);
+}
+
+@font-face {
+  font-family: 'lexo';
+  src: url(fontin/lexo-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'blotter';
+  src: url(fontin/blotter/blotter-regular_1-webfont.woff);
+}
+
+@font-face {
+  font-family: 'actionj';
+  src: url(fontin/actionj-webfont.woff);
+}
+@font-face {
+  font-family: 'constant';
+  src: url(fontin/constant-webfont.woff);
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url(fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'prefix';
+  src: url(fontin/prefix-webfont.woff);
+}
+
+
+@font-face {
+  font-family: '2dumb';
+  src: url(fontin/2Dumb.ttf);
+}
+
+@font-face {
+  font-family: '1942';
+  src: url(fontin/1942.ttf);
+}
+
+@font-face {
+  font-family: '3dumb';
+  src: url(fontin/3Dumb.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(fontin/rowdy.otf);
+}
+
+@font-face {
+  font-family: 'abyss';
+  src: url(fontin/abyss.otf);
+}
+
+
+
+@font-face {
+  font-family: 'bagnard';
+  src: url(fontin/Bagnard.otf);
+}
+
+
+@font-face {
+  font-family: 'barber';
+  src: url(fontin/barber.woff);
+}
+
+.barber {
+font-family: 'barber';
+}
+
+.bagnard {
+font-family: 'bagnard';
+}
+
+
+.abyss {
+font-family: 'abyss';
+}
+
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+.brizel {
+font-family: 'brizel';
+}
+
+
+.dumb3 {
+font-family: '3dumb';
+}
+
+.dumb2 {
+font-family: '2dumb';
+}
+
+
+.font1942 {
+font-family: '1942';
+}
+
+.prefix {
+font-family: 'prefix';
+}
+.amatic {
+font-family: 'amatic';
+}
+
+
+.constant {
+font-family: 'constant';
+}
+
+.actionj {
+font-family: 'actionj';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+.lexo {
+font-family: 'lexo';
+}
+
+.blotter {
+font-family: 'blotter';
+}
+
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+

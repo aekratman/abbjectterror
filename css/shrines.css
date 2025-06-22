@@ -1,0 +1,188 @@
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+/* Backgrounds */
+
+
+.bodybackground {
+  background-image: url(/images/spacecase.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+.row {
+  display: flex;
+}
+
+
+
+/* Resizing (esp. images) */
+
+.resize10 {
+    width:10%; 
+    height: auto;
+}
+
+
+.resize50 {
+    width: 50%; /* you can use % */
+    height: auto;
+
+}
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+
+
+/* Centering */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+.flexrowcenter{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+/* Boxes */
+
+.boxbox {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  position: relative;
+  bottom: 10px;
+  
+}        
+  
+  .boxboxtext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+  }
+  
+  
+a:link {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(fontin/basiic-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'amatic';
+  src: url(fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(fontin/rowdy.otf);
+}
+
+
+
+
+.brizel {
+font-family: 'brizel';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+
+
+
