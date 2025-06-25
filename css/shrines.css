@@ -30,6 +30,8 @@ div {text-align: center;}
 .resize50 {
     width: 50%; /* you can use % */
     height: auto;
+    padding: 10px;
+
 
 }
 

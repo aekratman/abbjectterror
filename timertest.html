@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Days Since Feb 20, 2019</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #aef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .timer-container {
+    background: #333;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px #00ffffaa;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  .days-count {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #00ffff;
+  }
+  .label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #66ffffcc;
+  }
+</style>
+</head>
+<body>
+
+<div class="timer-container">
+  <h1>Days since Feb 20, 2019</h1>
+  <div class="days-count" id="daysCount">0</div>
+  <div class="label">days</div>
+</div>
+
+<script>
+  function calculateDaysSince(dateString) {
+    const startDate = new Date(dateString);
+    const today = new Date();
+    // Clear time to midnight for accurate day difference
+    startDate.setHours(0,0,0,0);
+    today.setHours(0,0,0,0);
+    const diffTime = today - startDate; // milliseconds difference
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays;
+  }
+
+  function updateDaysCount() {
+    const days = calculateDaysSince('2019-02-20');
+    document.getElementById('daysCount').textContent = days;
+  }
+
+  // Run on load
+  updateDaysCount();
+
+  // Optional: update every 24 hours (in case page stays open)
+  setInterval(updateDaysCount, 1000 * 60 * 60 * 24);
+</script>
+
+</body>
+</html>

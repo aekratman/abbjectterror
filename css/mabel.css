@@ -1,0 +1,701 @@
+html, body {
+  overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-family: "1942", sans-serif;
+    color: rgb(171, 230, 129);
+}
+
+
+
+.mabelbg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: #557656;
+  /* background-image: url(/images/mabelbg.jpeg); */
+}
+
+
+.bottomtape {
+  position: relative;
+  bottom: 0;         /* or fine-tune this as needed */
+  right: 0;          /* don't push it out of container */
+  width: 100px;      /* or whatever fixed % or px size you want */
+  max-width: 100%;   /* ensure it doesn’t overflow */
+}
+
+
+.toptape {
+    position: absolute;
+    top: 40%;
+    left: -20%;
+    width: 40%;
+}
+
+.cornertape {
+    position: absolute;
+    left: 90%;
+    width: 40%;
+    z-index: -1;
+    transform: rotateY(180deg)  rotateZ(40deg);
+    
+}
+
+
+
+.tilt-hover {
+  transition: transform 0.3s ease;
+   opacity: 1;
+}
+
+.tilt-hover:hover {
+  transform: rotate(15deg);
+}
+.tooltip-wrapper {
+  position: absolute;
+  bottom: -20px;      
+  right: -240px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+#hoverimg {
+  width: 120px;
+}
+
+#custom-tooltip {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  font-family: 'basiic', sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-wrapper:hover #custom-tooltip {
+  opacity: 1;
+}
+
+
+
+
+/* basic formatting */
+.img{
+  display: flex;
+
+gap: 5000px;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Animation */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.upDown {
+  animation: moveUpDown 2s infinite;
+  animation-delay: 1s;
+}
+
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:10%; /* you can use % */
+    height: auto;
+}
+
+
+
+.resizesidebar {
+    width: 90%; /* you can use % */
+    height: auto;
+}
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+/* Centering */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.right {
+  display: block;
+  margin-left: auto;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+/* Dropdowns */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Boxes */
+
+.sidebar {
+    position: relative;
+text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 700px;
+  margin: 10px;
+  background: black;
+  border: 5px solid rgb(171, 230, 129);
+}
+
+
+
+.centeredphoto
+{
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 8px;
+    
+
+  background:
+    radial-gradient(circle 30px at top    left ,#0000 98%,rgb(171, 230, 129)  ) top    left,
+    radial-gradient(circle 30px at top    right,#0000 98%,rgb(171, 230, 129) ) top    right,
+    radial-gradient(circle 30px at bottom left ,#0000 98%,rgb(171, 230, 129)) bottom left,
+    radial-gradient(circle 30px at bottom right,#0000 98%,rgb(171, 230, 129)) bottom right;
+
+}
+
+.sidebarphoto {
+  width:300px;
+  height: auto;
+  padding: 8px;
+  margin: 10px;
+  background:
+    radial-gradient(circle 30px at top    left ,#0000 98%,rgb(171, 230, 129)  ) top    left,
+    radial-gradient(circle 30px at top    right,#0000 98%,rgb(171, 230, 129) ) top    right,
+    radial-gradient(circle 30px at bottom left ,#0000 98%,rgb(171, 230, 129)) bottom left,
+    radial-gradient(circle 30px at bottom right,#0000 98%,rgb(171, 230, 129)) bottom right;
+  background-size:51% 51%;
+  background-repeat:no-repeat;
+
+}
+
+
+.centertext{
+    text-align: center;
+}
+
+.mask {
+  -webkit-mask:
+    radial-gradient(circle 30px at top    left ,#0000 98%,#000) top    left,
+    radial-gradient(circle 30px at top    right,#0000 98%,#000) top    right,
+    radial-gradient(circle 30px at bottom left ,#0000 98%,#000) bottom left,
+    radial-gradient(circle 30px at bottom right,#0000 98%,#000) bottom right;
+  -webkit-mask-size:51% 51%;
+  -webkit-mask-repeat:no-repeat;
+}
+
+
+.sidebarright {
+  width: auto;
+  height: 150px;
+ margin-left: 20px;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 25px;
+  background: black;
+  border: 5px solid white;
+}
+
+.centerbar, .centerbarbio, .centercomf {
+      position: relative;
+      justify-content: center;
+    overflow: auto;
+
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+}
+
+.centerbar {
+  height: 750px;
+  width: 700px;
+  border: 5px solid rgb(171, 230, 129);
+}
+
+
+
+
+
+.bodyboxauto {
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+  border: 5px solid rgb(171, 230, 129);
+}
+
+.autobox {
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin: 10px;
+  padding: 25px;
+  background: black;
+}
+
+
+.boxbox {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  position: relative;
+  bottom: 10px;
+  
+}        
+  
+  .boxboxtext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+  }
+
+.centerbox {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 200px;
+  padding: 25px;
+  border: 5px solid rgb(171, 230, 129);
+}
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.button {
+  border: none;
+  margin-right: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+/* button:hover, a:hover {
+  opacity: 0.7;
+} */
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(/fontin/basiic-webfont.woff);
+}
+
+@font-face {
+  font-family: 'roth';
+  src: url(/fontin/RothmanPlain.ttf);
+}
+
+@font-face {
+  font-family: 'lexo';
+  src: url(/fontin/lexo-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'blotter';
+  src: url(/fontin/blotter/blotter-regular_1-webfont.woff);
+}
+
+@font-face {
+  font-family: 'actionj';
+  src: url(//fontin/actionj-webfont.woff);
+}
+@font-face {
+  font-family: 'constant';
+  src: url(//fontin/constant-webfont.woff);
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url(//fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'prefix';
+  src: url(//fontin/prefix-webfont.woff);
+}
+
+
+@font-face {
+  font-family: '2dumb';
+  src: url(/fontin/2Dumb.ttf);
+}
+
+@font-face {
+  font-family: '1942';
+  src: url(/fontin/1942.ttf);
+}
+
+@font-face {
+  font-family: '3dumb';
+  src: url(/fontin/3Dumb.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(/fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(/fontin/rowdy.otf);
+}
+
+@font-face {
+  font-family: 'abyss';
+  src: url(/fontin/abyss.otf);
+}
+
+
+
+@font-face {
+  font-family: 'bagnard';
+  src: url(/fontin/Bagnard.otf);
+}
+
+
+@font-face {
+  font-family: 'barber';
+  src: url(/fontin/barber.woff);
+}
+
+.barber {
+font-family: 'barber';
+}
+
+.bagnard {
+font-family: 'bagnard';
+}
+
+
+.abyss {
+font-family: 'abyss';
+}
+
+.roth {
+  font-family: 'roth';
+}
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+
+
+.brizel {
+font-family: 'brizel';
+}
+
+
+.dumb3 {
+font-family: '3dumb';
+}
+
+.dumb2 {
+font-family: '2dumb';
+}
+
+
+.font1942 {
+font-family: '1942';
+}
+
+.prefix {
+font-family: 'prefix';
+}
+.amatic {
+font-family: 'amatic';
+}
+
+
+.constant {
+font-family: 'constant';
+}
+
+.actionj {
+font-family: 'actionj';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+.lexo {
+font-family: 'lexo';
+}
+
+.blotter {
+font-family: 'blotter';
+}
+
+.rec { display: none; }
+
+button {
+  background-color: #2b3690;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-family: basiic;
+}
+
+button:hover, button.active { background-color: grey; }
+
+
+.tooltip {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px; /* space between image and button */
+  position: relative;
+}
+
+.hidden-button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* prevents clicks when hidden */
+}
+
+.tooltip:hover .hidden-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.headerboy {
+  padding: 30px;
+  background-image: url(/images/neighborhood.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% -20%;
+text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -px black;
+  font-size: 40px;
+  color: darkblue;
+  text-align: center;
+}
+
+
+
+.alignbottom {
+vertical-align: bottom;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footerboy {
+  padding: 20px;
+  text-align: center;
+  background: #060606;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  } 
+}
+
+/* timer stuff*/
+
+.timer-container {
+    padding: 10px 20px;
+    text-align: center;
+    
+  }
+  h2 {
+    font-size: 20px;
+    font-family: "1942";
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+
+  .days-count {
+    font-size: 3rem;
+    font-family: "1942";
+    font-weight: bold;
+    color: #00ffff;
+  }
+  .label {
+    font-size: 1.2rem;
+        font-family: "1942";
+
+    margin-top: 10px;
+    color: #66ffffcc;
+  }
