@@ -1,0 +1,428 @@
+
+/* piercecharabg, basiic, centerbarnormal, gridcontainer, relativecontainer, 
+center image2 resizedouble, overlay2, text2 */
+
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+
+
+.relativecontainer {
+  position: relative;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2a316f;
+}
+
+.relativecontainer:hover .overlay2 {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gridcontainer {
+    display: grid;
+    background-color: black;
+    grid-template-columns: auto auto auto;
+}
+
+.piercecharabg, .piercebg, .mechbg, .mabelbg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.piercecharabg {
+  background-image: url(/images/backdrop2.jpg);
+}
+
+.piercebg {
+  background-image: url(/images/piercebg.jpg);
+}
+
+
+/* Animation */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.upDown {
+  animation: moveUpDown 2s infinite;
+  animation-delay: 1s;
+}
+
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:10%; /* you can use % */
+    height: auto;
+}
+
+
+.textbox{
+   width: auto; /* you can use % */
+    height: auto;
+}
+  
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center_large {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%; 
+  height: auto;
+
+
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexcenter{
+  display: flex;
+  flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+
+
+.flexcol{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+/* Boxes */
+
+.sidebar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 700px;
+  margin: 10px;
+  background: black;
+  border: 5px solid green;
+}
+
+.sidebarphoto {
+  width: 300px;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  background: black;
+  border: 5px solid white;
+}
+
+.centerbar, .centerbarbio, .centercomf {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: black;
+}
+
+.centerbar {
+  height: 750px;
+  border: 5px solid green;
+}
+
+.centerbarbio {
+  height: auto;
+  border: 5px solid #00C1FF;
+}
+
+.boxbox {
+  width: 250px;
+  height: 200px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  position: relative;
+  bottom: 10px;
+  
+}        
+  
+  .boxboxtext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+  }
+
+.centerbox {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 200px;
+  padding: 25px;
+  border: 5px solid green;
+}
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Fonts section */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(fontin/basiic-webfont.woff);
+}
+
+@font-face {
+  font-family: 'roth';
+  src: url(fontin/RothmanPlain.ttf);
+}
+
+@font-face {
+  font-family: 'lexo';
+  src: url(fontin/lexo-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'blotter';
+  src: url(fontin/blotter/blotter-regular_1-webfont.woff);
+}
+
+@font-face {
+  font-family: 'actionj';
+  src: url(/fontin/actionj-webfont.woff);
+}
+@font-face {
+  font-family: 'constant';
+  src: url(/fontin/constant-webfont.woff);
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url(/fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'prefix';
+  src: url(/fontin/prefix-webfont.woff);
+}
+
+
+@font-face {
+  font-family: '2dumb';
+  src: url(fontin/2Dumb.ttf);
+}
+
+@font-face {
+  font-family: '1942';
+  src: url(fontin/1942.ttf);
+}
+
+@font-face {
+  font-family: '3dumb';
+  src: url(fontin/3Dumb.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(fontin/rowdy.otf);
+}
+
+@font-face {
+  font-family: 'abyss';
+  src: url(fontin/abyss.otf);
+}
+
+
+
+@font-face {
+  font-family: 'bagnard';
+  src: url(fontin/Bagnard.otf);
+}
+
+
+@font-face {
+  font-family: 'barber';
+  src: url(fontin/barber.woff);
+}
+
+.barber {
+font-family: 'barber';
+}
+
+.bagnard {
+font-family: 'bagnard';
+}
+
+
+.abyss {
+font-family: 'abyss';
+}
+
+.roth {
+  font-family: 'roth';
+}
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+
+
+.brizel {
+font-family: 'brizel';
+}
+
+
+.dumb3 {
+font-family: '3dumb';
+}
+
+.dumb2 {
+font-family: '2dumb';
+}
+
+
+.font1942 {
+font-family: '1942';
+}
+
+.prefix {
+font-family: 'prefix';
+}
+.amatic {
+font-family: 'amatic';
+}
+
+
+.constant {
+font-family: 'constant';
+}
+
+.actionj {
+font-family: 'actionj';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+.lexo {
+font-family: 'lexo';
+}
+
+.blotter {
+font-family: 'blotter';
+}
+
+.rec { display: none; }
+
+button:hover, button.active { background-color: #848fe6; }

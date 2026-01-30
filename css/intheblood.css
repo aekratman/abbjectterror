@@ -1,0 +1,482 @@
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+
+body {
+    background-color: #aa1c1c;
+    color:  rgb(252, 90, 90);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Animation */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.upDown {
+  animation: moveUpDown 2s infinite;
+  animation-delay: 1s;
+}
+
+
+
+/* Resizing (esp. images) */
+
+.resizebaby {
+    width:10%; /* you can use % */
+    height: auto;
+}
+
+
+.resize20 {
+    width: 20%; /* you can use % */
+    height: auto;
+}
+
+
+.resize50 {
+    width: 50%; /* you can use % */
+    height: auto;
+
+}
+
+
+
+.resizedouble {
+    width: 100%; /* you can use % */
+    height: auto;
+}
+
+
+.resizebig {
+    width: 110%; /* you can use % */
+    height: auto;  
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.resizenorm {
+    width: 100%; /* you can use % */
+    height: 100%;
+}
+
+
+.resizedouble2 {
+    width: 70%; /* you can use % */
+    height: auto;
+}
+
+.iconsize {
+    width: 150px; /* you can use % */
+    height: auto;
+}
+
+
+/* Flex boxes */
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+
+/* Dropdowns */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Boxes */
+
+.sidebar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 700px;
+  margin: 10px;
+  background: black;
+  border: 5px solid green;
+}
+
+.sidebarphoto {
+  width: 300px;
+  justify-content: center;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  background: black;
+  border: 5px solid white;
+}
+
+.sidebarright {
+  width: auto;
+  height: 150px;
+ margin-left: 20px;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 25px;
+  background: black;
+  border: 5px solid white;
+}
+
+.boxbox {
+  width: 250px;
+  height: 200px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  position: relative;
+  bottom: 10px;
+  
+}        
+  
+  .boxboxtext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+  }
+
+.centerbox {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 200px;
+  padding: 25px;
+  border: 5px solid green;
+}
+
+.rightbox {
+  margin-left: 900px;
+    margin-top: -900px;
+  padding: 25px;
+}
+
+.buttonbox {
+  margin-left: 900px;
+    margin-top: -400px;
+  background: black;
+
+  border: 5px solid green;
+  padding: 25px;
+}
+
+.lefttbox {
+  margin-right: 900px;
+    margin-top: -600px;
+
+  padding: 25px;
+}
+
+.bodyboxblue {
+  width: 400px;
+  height: auto;
+  padding: 25px;
+  background: black;
+  border: 5px solid #00C1FF;
+}
+
+a:link {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFDC00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Fonts */
+
+
+@font-face {
+  font-family: 'basiic';
+  src: url(/fontin/basiic-webfont.woff);
+}
+
+@font-face {
+  font-family: 'roth';
+  src: url(/fontin/RothmanPlain.ttf);
+}
+
+@font-face {
+  font-family: 'lexo';
+  src: url(/fontin/lexo-webfont.woff);
+}
+
+
+@font-face {
+  font-family: 'blotter';
+  src: url(/fontin/blotter/blotter-regular_1-webfont.woff);
+}
+
+@font-face {
+  font-family: 'actionj';
+  src: url(//fontin/actionj-webfont.woff);
+}
+@font-face {
+  font-family: 'constant';
+  src: url(//fontin/constant-webfont.woff);
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url(//fontin/amatic.ttf);
+}
+
+@font-face {
+  font-family: 'prefix';
+  src: url(//fontin/prefix-webfont.woff);
+}
+
+
+@font-face {
+  font-family: '2dumb';
+  src: url(/fontin/2Dumb.ttf);
+}
+
+@font-face {
+  font-family: '1942';
+  src: url(/fontin/1942.ttf);
+}
+
+@font-face {
+  font-family: '3dumb';
+  src: url(/fontin/3Dumb.ttf);
+}
+
+@font-face {
+  font-family: 'brizel';
+  src: url(/fontin/Brizel.ttf);
+}
+
+@font-face {
+  font-family: 'rowdy';
+  src: url(/fontin/rowdy.otf);
+}
+
+@font-face {
+  font-family: 'abyss';
+  src: url(/fontin/abyss.otf);
+}
+
+
+
+@font-face {
+  font-family: 'bagnard';
+  src: url(/fontin/Bagnard.otf);
+}
+
+
+@font-face {
+  font-family: 'barber';
+  src: url(/fontin/barber.woff);
+}
+
+.barber {
+font-family: 'barber';
+}
+
+.bagnard {
+font-family: 'bagnard';
+}
+
+
+.abyss {
+font-family: 'abyss';
+}
+
+.roth {
+  font-family: 'roth';
+}
+
+.rowdy {
+font-family: 'rowdy';
+}
+
+
+
+.brizel {
+font-family: 'brizel';
+}
+
+
+.dumb3 {
+font-family: '3dumb';
+}
+
+.dumb2 {
+font-family: '2dumb';
+}
+
+
+.font1942 {
+font-family: '1942';
+}
+
+.prefix {
+font-family: 'prefix';
+}
+.amatic {
+font-family: 'amatic';
+}
+
+
+.constant {
+font-family: 'constant';
+}
+
+.actionj {
+font-family: 'actionj';
+}
+
+.basiic {
+font-family: 'basiic';
+}
+
+.lexo {
+font-family: 'lexo';
+}
+
+.blotter {
+font-family: 'blotter';
+}
+
+.rec { display: none; }
+
+button {
+  background-color: #2b3690;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-family: basiic;
+}
+
+button:hover, button.active { background-color: #848fe6; }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.flexrow-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap; 
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.left-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box;
+}
+
+
+
+.tilt-hover {
+  transition: transform 0.3s ease;
+   opacity: 1;
+}
+
+.tilt-hover:hover {
+  transform: rotate(3deg);
+  transform:scale(1.2);
+}

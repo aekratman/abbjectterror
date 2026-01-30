@@ -448,7 +448,7 @@ gap: 5000px;
 .centercomf {
   width: 700px;
   height: auto;
-  border: 5px solid #FFFDD0;
+  border: 5px solid red;
   background: lightgrey;
 }
 
@@ -730,25 +730,25 @@ gap: 5000px;
 }
 
 a:link {
-  color: #FFDC00;
+  color: darkred;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #FFDC00;
+  color: darkred;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: green;
+  color: red;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: yellow;
+  color: darkred;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -800,23 +800,23 @@ button:hover, a:hover {
 
 @font-face {
   font-family: 'basiic';
-  src: url(fontin/basiic-webfont.woff);
+  src: url(/fontin/basiic-webfont.woff);
 }
 
 @font-face {
   font-family: 'roth';
-  src: url(fontin/RothmanPlain.ttf);
+  src: url(/fontin/RothmanPlain.ttf);
 }
 
 @font-face {
   font-family: 'lexo';
-  src: url(fontin/lexo-webfont.woff);
+  src: url(/fontin/lexo-webfont.woff);
 }
 
 
 @font-face {
   font-family: 'blotter';
-  src: url(fontin/blotter/blotter-regular_1-webfont.woff);
+  src: url(/fontin/blotter/blotter-regular_1-webfont.woff);
 }
 
 @font-face {
@@ -841,45 +841,45 @@ button:hover, a:hover {
 
 @font-face {
   font-family: '2dumb';
-  src: url(fontin/2Dumb.ttf);
+  src: url(/fontin/2Dumb.ttf);
 }
 
 @font-face {
   font-family: '1942';
-  src: url(fontin/1942.ttf);
+  src: url(/fontin/1942.ttf);
 }
 
 @font-face {
   font-family: '3dumb';
-  src: url(fontin/3Dumb.ttf);
+  src: url(/fontin/3Dumb.ttf);
 }
 
 @font-face {
   font-family: 'brizel';
-  src: url(fontin/Brizel.ttf);
+  src: url(/fontin/Brizel.ttf);
 }
 
 @font-face {
   font-family: 'rowdy';
-  src: url(fontin/rowdy.otf);
+  src: url(/fontin/rowdy.otf);
 }
 
 @font-face {
   font-family: 'abyss';
-  src: url(fontin/abyss.otf);
+  src: url(/fontin/abyss.otf);
 }
 
 
 
 @font-face {
   font-family: 'bagnard';
-  src: url(fontin/Bagnard.otf);
+  src: url(/fontin/Bagnard.otf);
 }
 
 
 @font-face {
   font-family: 'barber';
-  src: url(fontin/barber.woff);
+  src: url(/fontin/barber.woff);
 }
 
 .barber {
@@ -1123,4 +1123,41 @@ vertical-align: bottom;
   padding-bottom: 30px;
 }
 
+
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.galdiv {
+    font-size: 15px;
+    width: 20%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.galdiv b {
+    font-size: 14px;
+}
+
+.galdiv img {
+    width: 145px !important;
+    height: 145px !important;
+    border: solid #d21f3c;
+        
+}
+
+.galtxt {
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+.galdiv { width: 45%; font-size: 15px; }
+}
 

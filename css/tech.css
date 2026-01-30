@@ -8,6 +8,8 @@ h1 {
     color: rgb(171, 230, 129);
 }
 
+
+
 .mabelbg {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,10 +21,10 @@ h1 {
 
 .bottomtape {
   position: relative;
-  bottom: 0;
-  right: 0; 
-  width: 100px;
-  max-width: 100%;
+  bottom: 0;         /* or fine-tune this as needed */
+  right: 0;          /* don't push it out of container */
+  width: 100px;      /* or whatever fixed % or px size you want */
+  max-width: 100%;   /* ensure it doesn’t overflow */
 }
 
 
@@ -35,12 +37,13 @@ h1 {
 
 .cornertape {
     position: absolute;
-    left: 80%;
-    width: 25%;
+    left: 90%;
+    width: 40%;
     z-index: -1;
     transform: rotateY(180deg)  rotateZ(40deg);
     
 }
+
 
 
 .tilt-hover {
