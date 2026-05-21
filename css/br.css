@@ -5,15 +5,14 @@ html, body {
 h1 {
     text-align: center;
     font-family: "1942", sans-serif;
-    color: rgb(171, 230, 129);
+    color: skyblue;
 }
 
-.mabelbg {
+.brbg {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-color: #557656;
-  /* background-image: url(/images/mabelbg.jpeg); */
+  background-color: #2b3690;
 }
 
 
@@ -138,7 +137,7 @@ gap: 5000px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: fit-content;
 }
 
 
@@ -203,16 +202,21 @@ gap: 5000px;
 
 .sidebar {
     position: relative;
-text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
-  height: 700px;
-  margin: 10px;
+    text-align: center;
+  max-width: 350px;
+  height: fit-content;
+   min-height: 700px;
+  margin: 10px auto;
   background: black;
   border: 5px solid rgb(171, 230, 129);
 }
 
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 .centeredphoto
@@ -278,6 +282,7 @@ text-align: center;
 .centerbar, .centerbarbio, .centercomf {
       position: relative;
       justify-content: center;
+      text-align: center;
     overflow: auto;
 
 
@@ -544,6 +549,7 @@ font-family: 'actionj';
 
 .basiic {
 font-family: 'basiic';
+font-size: medium;
 }
 
 .lexo {
